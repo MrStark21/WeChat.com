@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>WeChat || By Mr.Stark</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+</head>
+
+<body>
+
+
+
+    <h2>Welcome to WeChat || By Mr.Stark</h2>
+
+
+    <div class="container">
+        <!-- <div class="message right"></div>
+        <div class="message left"></div> -->
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
+<style>
+    body {
+        height: 100vh;
+        background: #111;
+    }
+    
+    h2 {
+        margin: auto;
+        color: #fff;
+        font-size: 2em;
+        font-weight: 600;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo {
+        display: block;
+        margin: auto;
+        width: 70px;
+        height: 50px;
+    }
+    
+    .container {
+        max-width: 955px;
+        border: 2px solid white;
+        margin: auto;
+        height: 60vh;
+        padding: 33px;
+        overflow-y: auto;
+        margin-bottom: 23px;
+    }
+    
+    .message {
+        background-color: aqua;
+        width: 24%;
+        padding: 10px;
+        margin: 17px 2px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    
+    .left {
+        float: left;
+        clear: both;
+    }
+    
+    .right {
+        float: right;
+        clear: both;
+    }
+    
+    .send,
+    #send-container {
+        display: block;
+        margin: auto;
+        text-align: center;
+        max-width: 985px;
+        width: 100%;
+    }
+    
+    #messageInp {
+        width: 92%;
+        border: 2px solid black;
+        border-radius: 6px;
+        height: 34px;
+    }
+    
+    .btn {
+        cursor: pointer;
+        border: 2px solid black;
+        border-radius: 6px;
+        height: 34px;
+        color: black;
+    }
+</style>
